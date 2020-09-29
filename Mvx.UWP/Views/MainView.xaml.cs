@@ -1,4 +1,7 @@
-﻿using MvvmCross.Platforms.Uap.Views;
+﻿using MvvmCross.Core;
+using MvvmCross.Navigation;
+using MvvmCross.Platforms.Uap.Views;
+using Mvx.Core.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,18 +17,25 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// Die Elementvorlage "Leere Seite" wird unter https://go.microsoft.com/fwlink/?LinkId=234238 dokumentiert.
-
 namespace Mvx.UWP.Views
 {
     /// <summary>
     /// Eine leere Seite, die eigenständig verwendet oder zu der innerhalb eines Rahmens navigiert werden kann.
     /// </summary>
-    public sealed partial class SecondView : MvxWindowsPage
+    public sealed partial class MainView : MvxWindowsPage
     {
-        public SecondView()
+        private readonly MainViewModel _mainViewModel;
+
+        public MainView(MainViewModel mainViewModel)
         {
             this.InitializeComponent();
+     
+            _mainViewModel = mainViewModel;
+        }
+
+        private void ItemFrame_Holding(object sender, HoldingRoutedEventArgs e)
+        {
+            ItemFrame.SetValue(null, _mainViewModel.newViewModel);
         }
     }
 }

@@ -22,20 +22,12 @@ namespace Mvx.UWP.Views
     /// <summary>
     /// Eine leere Seite, die eigenständig verwendet oder zu der innerhalb eines Rahmens navigiert werden kann.
     /// </summary>
-    public sealed partial class StartView : StartViewPage
+    public sealed partial class StartView : MvxWindowsPage
     {
-        private readonly IMvxNavigationService _navigationService;
-
-        public StartView(IMvxNavigationService navigationService)
+        public StartView()
         {
             this.InitializeComponent();
-            _navigationService = navigationService;
         }
-
-    }
-
-    public abstract class StartViewPage : MvxWindowsPage<StartViewModel>
-    {
 
     }
 }

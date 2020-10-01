@@ -22,7 +22,11 @@ namespace Mvx.Core.ViewModels
 
         public override void ViewAppeared()
         {
-            base.ViewAppeared();
+
+            MvxNotifyTask.Create(async () =>
+            {
+                await NavigationService.Navigate<TabsRootViewModel>();
+            });
         }
     }
 }

@@ -9,5 +9,6 @@
     <StackPanel>
         <TextBlock Text="Content" />
         <TextBlock Text="{x:Bind ViewModel.ContentText}" />
+        <Button Content="I am a Button on Detail View" />
     </StackPanel>
 </app:SplitDetailViewPage>

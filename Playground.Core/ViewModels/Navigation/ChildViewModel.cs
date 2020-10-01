@@ -39,8 +39,8 @@ namespace Playground.Core.ViewModels
         {
             // Demonstrates that exceptions can be raised on property changed but are swallowed by default to 
             // protect the app from crashing
-            if (e.PropertyName == nameof(BrokenTextValue))
-                throw new System.NotImplementedException();
+            if (e.PropertyName == nameof(BrokenTextValue)) return;
+                //throw new System.NotImplementedException();
         }
 
         public override void Prepare()

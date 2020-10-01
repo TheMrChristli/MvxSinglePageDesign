@@ -8,5 +8,6 @@
     <StackPanel>
         <TextBlock Text="Pane" />
         <TextBlock Text="{Binding PaneText}" />
+        <Button Content="I am a Button on Master View" />
     </StackPanel>
 </views:MvxWindowsPage>

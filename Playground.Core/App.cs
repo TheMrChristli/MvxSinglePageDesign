@@ -3,9 +3,7 @@
 // See the LICENSE file in the project root for more information.
 
 using System.Threading.Tasks;
-using MvvmCross;
 using MvvmCross.IoC;
-using MvvmCross.Localization;
 using MvvmCross.ViewModels;
 using Playground.Core.ViewModels;
 

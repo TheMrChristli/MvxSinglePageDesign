@@ -11,5 +11,7 @@
 
     <Grid Background="LightYellow">
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">This is Page One!</TextBlock>
+        <TextBlock Text="{Binding Message}" />
+        <Button Command="{Binding SetMessageCommand}" Content="ShowMessageBox" />
     </Grid>
 </views:MvxWindowsPage>

@@ -20,9 +20,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-
-            
-        <ContentControl Grid.Row="0" 
+        <Frame Grid.Row="0" 
                         Grid.Column="0" 
                         Grid.ColumnSpan="2" 
                         x:Name="ActiveItem"
@@ -31,13 +29,13 @@
                         Margin="10"
                         Background="LightGreen"/>
 
-        <Image Grid.Row="0" 
+        <!--<Image Grid.Row="0" 
                Grid.Column="0" 
                Grid.ColumnSpan="2" 
                Source="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" 
                HorizontalAlignment="Stretch"
                VerticalAlignment="Stretch"
-               Margin="10"/>
+               Margin="10"/>-->
 
         <Button Grid.Row="1" 
                 Grid.Column="0" 

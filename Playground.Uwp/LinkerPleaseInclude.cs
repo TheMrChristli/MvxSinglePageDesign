@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Specialized;
-using System.Windows.Input;
-using MvvmCross;
-using MvvmCross.Binding.BindingContext;
-using MvvmCross.Navigation;
-using MvvmCross.ViewModels;
+﻿using MvvmCross;
 
 namespace Playground.Uwp
 {

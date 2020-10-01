@@ -7,7 +7,6 @@ namespace Mvx.Core.ViewModels
 {
     public class SecondViewModel : MvxNavigationViewModel
     {
-        // https://github.com/MvvmCross/MvvmCross/tree/develop/Projects/Playground/Playground.Core/ViewModels/Navigation
         public SecondViewModel(IMvxNavigationService navigationService, IMvxLogProvider log) : base(log, navigationService)
         {
             SetMessageCommand = new MvxCommand(() => Message = "Hello");

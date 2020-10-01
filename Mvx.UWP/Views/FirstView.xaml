@@ -7,7 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FontSize="32">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" FontSize="32" Width="299" Height="299">
 
     <Grid Background="LightYellow">
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">This is Page One!</TextBlock>

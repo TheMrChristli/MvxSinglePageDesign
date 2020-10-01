@@ -11,37 +11,28 @@ namespace Mvx.Core.ViewModels
         public StartViewModel(IMvxLogProvider logger, IMvxNavigationService navigation)
             : base(logger, navigation)
         {
-
+            ShowFirstViewCommand = new MvxAsyncCommand(async () => await NavigationService.Navigate<FirstViewModel>());
+            ShowSecondViewCommand = new MvxAsyncCommand(async () => await NavigationService.Navigate<SecondViewModel>());
         }
 
-        private ICommand _showFirstViewCommand;
-        public ICommand ShowFirstViewCommand
-        {
-            get
-            {
-                _showFirstViewCommand = _showFirstViewCommand ?? new MvxCommand(ShowFirstView);
-                return _showFirstViewCommand;
-            }
-        }
-
-        private ICommand _showSecondViewCommand;
-
-        public ICommand ShowSecondViewCommand
-        {
-            get
-            {
-                _showSecondViewCommand = _showSecondViewCommand ?? new MvxCommand(ShowSecondView);
-                return _showSecondViewCommand;
-            }
-        }
-
-        private async void ShowFirstView()
+        public override async void ViewAppeared()
         {
             await NavigationService.Navigate<FirstViewModel>();
         }
-        private async void ShowSecondView()
+
+        public MvxAsyncCommand ShowFirstViewCommand { get; private set; }
+
+        public MvxAsyncCommand ShowSecondViewCommand { get; private set; }
+
+
+        protected override void SaveStateToBundle(IMvxBundle bundle)
         {
-            await NavigationService.Navigate<SecondViewModel>();
+            base.SaveStateToBundle(bundle);
+        }
+
+        protected override void ReloadFromBundle(IMvxBundle state)
+        {
+            base.ReloadFromBundle(state);
         }
     }
 }

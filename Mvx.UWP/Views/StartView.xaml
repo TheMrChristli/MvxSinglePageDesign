@@ -21,21 +21,15 @@
         </Grid.ColumnDefinitions>
 
         <Frame Grid.Row="0" 
-                        Grid.Column="0" 
-                        Grid.ColumnSpan="2" 
-                        x:Name="ActiveItem"
-                        HorizontalAlignment="Stretch"
-                        VerticalAlignment="Stretch"
-                        Margin="10"
-                        Background="LightGreen"/>
-
-        <!--<Image Grid.Row="0" 
                Grid.Column="0" 
                Grid.ColumnSpan="2" 
-               Source="https://www.talkwalker.com/images/2020/blog-headers/image-analysis.png" 
+               x:Name="ActiveItem"
+               HorizontalContentAlignment="Stretch"
+               VerticalContentAlignment="Stretch"
                HorizontalAlignment="Stretch"
                VerticalAlignment="Stretch"
-               Margin="10"/>-->
+               Margin="10"
+               Background="LightGreen"/>
 
         <Button Grid.Row="1" 
                 Grid.Column="0" 
@@ -45,7 +39,7 @@
                 VerticalAlignment="Stretch"
                 Margin="10 10"
                 Command="{Binding ShowFirstViewCommand}"/>
-        
+
         <Button Grid.Row="1" 
                 Grid.Column="1" 
                 Content="Page Two" 
@@ -54,21 +48,5 @@
                 VerticalAlignment="Stretch"
                 Margin="10 10"
                 Command="{Binding ShowSecondViewCommand}"/>
-        
-       
     </Grid>
-
-    <!--<NavigationView PaneDisplayMode="Top"
-                    IsBackButtonVisible="Collapsed"
-                    IsSettingsVisible="False"
-                    x:Name="NavigationView">
-        <NavigationView.MenuItems>
-            <NavigationViewItem Tag="first" Icon="Page" Content="Page One"/>
-            <NavigationViewItem Tag="second" Icon="Page2" Content="Page Two"/>
-        </NavigationView.MenuItems>
-
-        <ScrollViewer>
-            <Frame x:Name="ContentFrame" />
-        </ScrollViewer>
-    </NavigationView>-->
 </views:MvxWindowsPage>

@@ -19,21 +19,14 @@ namespace Playground.Core.ViewModels
     public class RootViewModel : MvxNavigationViewModel
     {
 
-        public RootViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService, IMvxViewModelLoader mvxViewModelLoader) : base(logProvider, navigationService)
+        public RootViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService) : base(logProvider, navigationService)
         {
-
             ShowChildCommand = new MvxAsyncCommand(async () =>
             {
-                var result = await NavigationService.Navigate<ChildViewModel, SampleModel, SampleModel>(new SampleModel
-                {
-                    Message = "Hey",
-                    Value = 1.23m
-                });
-                var testIfReturn = result;
+                await NavigationService.Navigate<ChildViewModel>();
             });
         }
 
         public IMvxAsyncCommand ShowChildCommand { get; }
-
     }
 }

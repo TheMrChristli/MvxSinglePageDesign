@@ -13,13 +13,8 @@ namespace Playground.Core.ViewModels
     {
         public SecondChildViewModel(IMvxLogProvider logProvider, IMvxNavigationService navigationService) : base(logProvider, navigationService)
         {
-            ShowNestedChildCommand = new MvxAsyncCommand(async () => await NavigationService.Navigate<NestedChildViewModel>());
-
             CloseCommand = new MvxAsyncCommand(async () => await NavigationService.Close(this));
         }
-
-        public IMvxAsyncCommand ShowNestedChildCommand { get; private set; }
-
         public IMvxAsyncCommand CloseCommand { get; private set; }
     }
 }

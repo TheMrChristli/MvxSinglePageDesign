@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Text.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Text.json">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="MvvmCross" Version="7.0.1" />
+    <PackageReference Include="MvvmCross.Plugin.JsonLocalization" Version="7.0.1" />
+    <PackageReference Include="MvvmCross.Plugin.Location" Version="7.0.1" />
+    <PackageReference Include="MvvmCross.Plugin.Messenger" Version="7.0.1" />
+    <PackageReference Include="MvvmCross.Plugin.Network" Version="7.0.1" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Converters\" />
+  </ItemGroup>
+
+</Project>

@@ -126,6 +126,15 @@
     <Compile Include="Views\SecondView.xaml.cs">
       <DependentUpon>SecondView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SplitDetailView.xaml.cs">
+      <DependentUpon>SplitDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplitMasterView.xaml.cs">
+      <DependentUpon>SplitMasterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SplitRootView.xaml.cs">
+      <DependentUpon>SplitRootView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\StartView.xaml.cs">
       <DependentUpon>StartView.xaml</DependentUpon>
     </Compile>
@@ -171,6 +180,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SecondView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SplitDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SplitMasterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SplitRootView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

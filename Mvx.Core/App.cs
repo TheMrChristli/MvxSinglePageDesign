@@ -17,7 +17,7 @@ namespace Mvx.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<StartViewModel>();
+            RegisterAppStart<SplitRootViewModel>();
         }
     }
 }

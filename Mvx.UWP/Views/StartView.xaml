@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
 
-    <!-- <Grid>
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="auto" />
@@ -58,14 +58,12 @@
                 Command="{Binding ShowSecondViewCommand}"/>
         
        
-    </Grid>-->
+    </Grid>
 
-    <NavigationView PaneDisplayMode="Top"
+    <!--<NavigationView PaneDisplayMode="Top"
                     IsBackButtonVisible="Collapsed"
                     IsSettingsVisible="False"
-                    x:Name="NavigationView"
-                    Loaded="NavigationView_Loaded"
-                    ItemInvoked="NavigationView_ItemInvoked">
+                    x:Name="NavigationView">
         <NavigationView.MenuItems>
             <NavigationViewItem Tag="first" Icon="Page" Content="Page One"/>
             <NavigationViewItem Tag="second" Icon="Page2" Content="Page Two"/>
@@ -74,5 +72,5 @@
         <ScrollViewer>
             <Frame x:Name="ContentFrame" />
         </ScrollViewer>
-    </NavigationView>
+    </NavigationView>-->
 </views:MvxWindowsPage>

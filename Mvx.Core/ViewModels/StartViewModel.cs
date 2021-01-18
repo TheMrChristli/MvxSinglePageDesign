@@ -16,7 +16,7 @@ namespace Mvx.Core.ViewModels
 
         public override async void ViewAppeared()
         {
-            await NavigationService.Navigate<FirstViewModel>();
+            //await NavigationService.Navigate<FirstViewModel>();
         }
 
         public MvxAsyncCommand ShowFirstViewCommand { get; private set; }

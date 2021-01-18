@@ -3,6 +3,7 @@ using MvvmCross.Platforms.Wpf.Views;
 using MvvmCross.Presenters;
 using MvvmCross.Presenters.Attributes;
 using MvvmCross.ViewModels;
+using Mvx.Core.ViewModels;
 
 namespace Mvx.WPF.Views
 {
@@ -18,9 +19,10 @@ namespace Mvx.WPF.Views
 
         public MvxBasePresentationAttribute PresentationAttribute(MvxViewModelRequest request)
         {
-            return new MvxWindowPresentationAttribute
+            return new MvxContentPresentationAttribute
             {
-                ViewType = typeof(FirstView)
+                WindowIdentifier = $"{nameof(StartView)}",
+                StackNavigation = false
             };
         }
     }

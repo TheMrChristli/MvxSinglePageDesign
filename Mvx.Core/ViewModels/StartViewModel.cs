@@ -2,7 +2,6 @@
 using MvvmCross.Logging;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
-using System.Windows.Input;
 
 namespace Mvx.Core.ViewModels
 {

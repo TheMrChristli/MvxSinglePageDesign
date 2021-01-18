@@ -75,18 +75,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\WindowChildView.xaml.cs">
-      <DependentUpon>WindowChildView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\NestedModalView.xaml.cs">
-      <DependentUpon>NestedModalView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ModalView.xaml.cs">
-      <DependentUpon>ModalView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\WindowView.xaml.cs">
-      <DependentUpon>WindowView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\SecondChildView.xaml.cs">
       <DependentUpon>SecondChildView.xaml</DependentUpon>
     </Compile>
@@ -108,22 +96,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\WindowChildView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\NestedModalView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\ModalView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\WindowView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\SecondChildView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

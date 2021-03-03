@@ -2,6 +2,7 @@
 using MvvmCross.Logging;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+using System.Threading.Tasks;
 
 namespace Mvx.Core.ViewModels
 {
@@ -16,6 +17,7 @@ namespace Mvx.Core.ViewModels
 
         public override async void ViewAppeared()
         {
+            await Task.Delay(1);
             //await NavigationService.Navigate<FirstViewModel>();
         }
 

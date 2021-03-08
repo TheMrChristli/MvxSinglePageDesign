@@ -18,13 +18,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <ContentPresenter Grid.Row="0"
-                                  Grid.Column="0" 
-                                  Grid.ColumnSpan="2"
-                                  Content="{Binding}"
-                                  HorizontalAlignment="Stretch"
-                                  VerticalAlignment="Stretch"
-                                  Margin="10"/>
+        <ContentControl Grid.ColumnSpan="2" Content="{Binding SelectedModel}"/>
 
         <Button Grid.Row="1" 
                         Grid.Column="0" 

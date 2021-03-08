@@ -10,13 +10,15 @@ namespace Mvx.Core.ViewModels
     {
         public StartViewModel()
         {
+            ShowFirstViewCommand = new MvxCommand(() => SelectedModel = new FirstViewModel());
+            ShowSecondViewCommand = new MvxCommand(() => SelectedModel = new SecondViewModel());
             //ShowFirstViewCommand = new MvxAsyncCommand(async () => await NavigationService.Navigate<FirstViewModel>());
             //ShowSecondViewCommand = new MvxAsyncCommand(async () => await NavigationService.Navigate<SecondViewModel>());
         }
 
-        public MvxAsyncCommand ShowFirstViewCommand { get; private set; }
+        public MvxCommand ShowFirstViewCommand { get; private set; }
 
-        public MvxAsyncCommand ShowSecondViewCommand { get; private set; }
+        public MvxCommand ShowSecondViewCommand { get; private set; }
 
         private MvxViewModel _selectedViewModel;
 

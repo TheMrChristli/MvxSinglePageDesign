@@ -9,8 +9,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="LightBlue">
-        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">This is Page Two!</TextBlock>
-        <TextBlock Text="{Binding Message}" />
-        <Button Command="{Binding SetMessageCommand}" Content="ShowMessageBox" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">This is Page Two!</TextBlock>
+        <TextBlock Grid.Row="1" Text="{Binding Message}" />
+        <Button Grid.Row="2" Command="{Binding SetMessageCommand}" Content="ShowMessageBox" />
     </Grid>
 </views:MvxWpfView>

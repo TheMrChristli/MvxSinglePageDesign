@@ -10,20 +10,11 @@ namespace Mvx.WPF.Views
     /// <summary>
     /// Interaktionslogik für StartView.xaml
     /// </summary>
-    public partial class StartView : IMvxOverridePresentationAttribute
+    public partial class StartView
     {
         public StartView()
         {
             InitializeComponent();
-        }
-
-        public MvxBasePresentationAttribute PresentationAttribute(MvxViewModelRequest request)
-        {
-            return new MvxContentPresentationAttribute
-            {
-                WindowIdentifier = $"{nameof(StartView)}",
-                StackNavigation = false
-            };
         }
     }
 }

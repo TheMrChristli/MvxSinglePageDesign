@@ -5,9 +5,9 @@ using MvvmCross.ViewModels;
 
 namespace Mvx.Core.ViewModels
 {
-    public class SecondViewModel : MvxNavigationViewModel
+    public class SecondViewModel : MvxViewModel
     {
-        public SecondViewModel(IMvxNavigationService navigationService, IMvxLogProvider log) : base(log, navigationService)
+        public SecondViewModel()
         {
             SetMessageCommand = new MvxCommand(() => Message = "Hello");
         }

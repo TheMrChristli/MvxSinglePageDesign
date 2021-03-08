@@ -5,10 +5,10 @@ using MvvmCross.ViewModels;
 
 namespace Mvx.Core.ViewModels
 {
-    public class FirstViewModel : MvxNavigationViewModel
+    public class FirstViewModel : MvxViewModel
     {
 
-        public FirstViewModel(IMvxNavigationService navigationService, IMvxLogProvider log) : base(log, navigationService)
+        public FirstViewModel()
         {
             SetMessageCommand = new MvxCommand(() => Message = "Hello");
         }
@@ -22,6 +22,5 @@ namespace Mvx.Core.ViewModels
             get { return _message; }
             set { SetProperty(ref _message, value); }
         }
-
     }
 }

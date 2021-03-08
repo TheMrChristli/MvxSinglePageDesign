@@ -20,29 +20,13 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Frame Grid.Row="0" 
+        <ContentPresenter Grid.Row="0" 
                Grid.Column="0" 
                Grid.ColumnSpan="2" 
-               x:Name="ActiveItem"
+                          Content="{Binding SelectedModel}"
                Margin="10"
                Background="LightGreen"/>
-
-        <RelativePanel Grid.Row="0" 
-                       Grid.Column="0" 
-                       Grid.ColumnSpan="2"
-                       >
-
-            <Frame Grid.Row="0" 
-               Grid.Column="0" 
-               Grid.ColumnSpan="2"
-               x:Name="SecondItem"
-               Padding="10"
-               Background="LightYellow" />
-
-        </RelativePanel>
-
-
-
+        
         <Button Grid.Row="1" 
                 Grid.Column="0" 
                 Content="Page One" 

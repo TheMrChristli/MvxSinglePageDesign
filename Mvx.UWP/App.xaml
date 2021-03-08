@@ -1,7 +1,14 @@
 ﻿<local:DemoApp
     x:Class="Mvx.UWP.App"
+    
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Mvx.UWP">
+    xmlns:local="using:Mvx.UWP"
+    xmlns:viewmodels="using:Mvx.Core.ViewModels"
+    xmlns:view="using:Mvx.UWP.Views">
+
+    <local:DemoApp.Resources>
+        
+    </local:DemoApp.Resources>
 
 </local:DemoApp>

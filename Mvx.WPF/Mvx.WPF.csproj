@@ -69,6 +69,9 @@
     <Compile Include="Views\FirstView.xaml.cs">
       <DependentUpon>FirstView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ModalView.xaml.cs">
+      <DependentUpon>ModalView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SecondView.xaml.cs">
       <DependentUpon>SecondView.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\FirstView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModalView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

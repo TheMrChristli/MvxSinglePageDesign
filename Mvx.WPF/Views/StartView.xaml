@@ -16,9 +16,10 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <ContentControl Grid.ColumnSpan="2" Content="{Binding SelectedModel}"/>
+        <ContentControl Grid.ColumnSpan="3" Content="{Binding SelectedModel}"/>
 
         <Button Grid.Row="1" 
                         Grid.Column="0" 
@@ -37,5 +38,14 @@
                         VerticalAlignment="Stretch"
                         Margin="10 10"
                         Command="{Binding ShowSecondViewCommand}"/>
+
+        <Button Grid.Row="1" 
+                        Grid.Column="2" 
+                        Content="Modal View" 
+                        FontSize="32"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        Margin="10 10"
+                        Command="{Binding ShowModalViewCommand}"/>
     </Grid>
 </views:MvxWpfView>
